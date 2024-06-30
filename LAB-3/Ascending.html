@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = prompt("enter length of aarray");
+
+        let a = [];
+        
+        for(i = 0; i<x; i++){
+            let num = prompt("Enter number: ");
+            a.push(num);
+            // a[i] = prompt("Enter an element at " + i);
+        }
+
+        for(i =0; i<x; i++){
+            let min = i;
+            for(j= i+1; j<x; j++){
+                if(a[j] < a[min]){
+                    min = j;
+                }
+            }
+            let temp = a[min];
+            a[min] =a[i];
+            a[i] = temp;
+        }
+
+        for(i = 0;i<x;i++){
+            console.log(a[i]);
+        }
+    </script>
+</body>
+</html>
