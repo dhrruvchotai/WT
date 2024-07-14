@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <input type="text" id="input">
+     <button id="btn">EYE</button>
+    <script>
+        let btn = document.getElementById("btn");
+        let input = document.getElementById("input");
+        let temp = true;
+
+        btn.addEventListener('click', ()=>{
+            
+            if(temp){
+                input.type = "password"
+            }
+            else{
+                input.type = "text";
+            }
+            temp = !temp;
+            
+        })
+    </script>
+</body>
+</html>
