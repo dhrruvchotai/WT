@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    .firstRow, .secondRow, .thirdRow, .fourthRow{
+        margin-top: 10px;
+        display: flex;
+        gap: 25px;
+        
+    }
+    
+</style>
+
+<body>
+    <form>
+        <input type="text" id="output">
+        <br>
+        <div class="firstRow">
+            <input type="button" id="seven" value="7" onclick="output.value += '7' " >
+            <input type="button" id="eight" value="8" onclick="output.value += '8' ">
+            <input type="button" id="nine" value="9"  onclick="output.value += '9' ">
+            <input type="button" id="plus" value="+" onclick="output.value += ' + ' ">
+        </div>
+
+        <div class="secondRow">
+            <input type="button" id="four" value="4" onclick="output.value += '4' ">
+            <input type="button" id="five" value="5" onclick="output.value += '5' ">
+            <input type="button" id="six" value="6" onclick="output.value += '6' ">
+            <input type="button" id="minus" value="-" onclick="output.value += ' - ' ">
+        </div>
+
+        <div class="thirdRow">
+            <input type="button" id="one" value="1" onclick="output.value += '1' ">
+            <input type="button" id="two" value="2" onclick="output.value += '2' ">
+            <input type="button" id="three" value="3" onclick="output.value += '3' ">
+            <input type="button" id="mult" value="*" onclick="output.value += ' * ' ">
+        </div>
+
+        <div class="fourthRow">
+            <input type="button" id="clr" value="C" onclick="output.value = null">
+            <input type="button" id="zero" value="0" onclick="output.value += '0' ">
+            <input type="button" id="divide" value="/" onclick="output.value += ' / ' ">
+            <input type="button" id="equal" value="=" onclick="getAns(output)">
+        </div>
+
+        <script src="App.js"></script>
+    </form>
+</body>
+
+</html>

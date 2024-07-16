@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Enter a number");
+
+        if(n > 999 || n < 0){
+            document.write("Out of range");
+        }
+        else if(isNaN(n)){
+            document.write("Not a Number");
+        }
+
+        else{
+
+        let a1 = ['zero','One', 'Two', 'Three', 'Four', 'Five','Six','Seven','Eight','Nine'];
+        let a2 = ['Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'];
+        let a3 = ['Twenty','Thirty','Fourty','Fifty','Sixty','Seventy','Eighty','Ninety'];
+        let result = "";
+
+        if(n>=100){
+            
+            result += (a1[Math.floor(n/100)] + " Hundred ")
+            n = n % 100;
+        }
+        if(n>=20){
+            result += (a3[Math.floor(n/10)-2] + "  ")
+            n%=10;
+        }
+        if(n>=10){
+            result += (a2[Math.floor(n)-10]+ "  ")
+            
+        }
+       else if (n>0){
+            result += a1[n]
+        }
+        
+        
+        
+        alert(result);
+    }
+    </script>
+</body>
+</html>

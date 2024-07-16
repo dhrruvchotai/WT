@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab27</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Enter a string : ");
+        let fi = 0;
+        let li = a.length-1;
+        for(i=0;i<=li;i++){
+            if(a.charAt(i) == 'a'){
+                fi = i;
+                break;
+            }
+        }
+        for(j = (a.length -1);j>=0;j--){
+            if(a.charAt(j) == 'a'){
+                li = j;
+                break;
+            }
+        }
+        console.log(a.substring(fi+1,li));
+    </script>
+</body>
+</html>
