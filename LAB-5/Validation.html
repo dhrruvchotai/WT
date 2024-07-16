@@ -14,7 +14,10 @@
         Repete Password: <input type="password" id="repete"> <br><br>
         Enrollment: <input type="number" id="enroll"><br><br>
         Phone Number: <input type="number" id="phoneNumber"> <br> <br>
+<<<<<<< HEAD
         Enter Date : <input type="text" id="year"> <br><br>
+=======
+>>>>>>> 30c29db3b4bbfa992d22372b1569e0b7cf466415
         <button id="btn">Submit</button>
     </form>
     <script>
@@ -41,6 +44,7 @@
             let pass = document.getElementById("passWord").value;
             let number = document.getElementById("phoneNumber").value;
             let btn = document.getElementById("btn");
+<<<<<<< HEAD
             let year = document.getElementById('.year');
 
             let systemdate = new Date();
@@ -57,15 +61,31 @@
             }
             else if(!regex3.test(number)){
                 alert("Enter Valid Number!!")
+=======
+
+            if(!regex.test(email)){
+               alert("Enter valid Email"); 
+            }
+            else if(!regex2.test(pass)){
+                alert("Enter valid Password");
+            }
+            else if(!regex3.test(number)){
+                alert("Bhai Bharat ma j re 6o ne???")
+>>>>>>> 30c29db3b4bbfa992d22372b1569e0b7cf466415
             }
             else if(pass != repete){
                 alert("Enter correct password");
             }
+<<<<<<< HEAD
             else if((systemyear - year)<18){
                 alert("You're not 18+")
             }
             else{
                 alert("All Values are ok!!");
+=======
+            else{
+                alert("Barobr chhe barobar chhe");
+>>>>>>> 30c29db3b4bbfa992d22372b1569e0b7cf466415
             }
             
         });
