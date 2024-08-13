@@ -2,7 +2,7 @@ const fs = require('fs');
 
 //exists
 fs.exists('C:\\Users\\User\\Desktop\\JavaScript\\Js Lab\\LAB-17\\PathModule.js',(ans) =>{
-    console.log("File exists : "+ans);
+    // console.log("File exists : "+ans);
 });
 
 fs.stat('C:\\Users\\User\\Desktop\\JavaScript',(err,data) => {
