@@ -13,15 +13,9 @@ yarn.lock
 # Ignore log files
 *.log
 
-# Ignore temporary files
-*.tmp
-*.temp
-
 # Ignore system files (e.g., macOS)
 .DS_Store
 
 # Ignore IDE/Editor config files (optional)
 .vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
+
