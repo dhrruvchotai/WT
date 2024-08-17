@@ -1,14 +1,24 @@
 const http = require('http');
-const fs = require('fs');
 
-let server = http.createServer((req,res) => {
+const server = http.createServer((req,res)=>{
 
-    fs.readFile('HttpModule.js',(err,data) => {
-        res.end(data);
-    });
-   
-} );
-
-server.listen(4100, () => {
-    console.log('server runnig.');
+    if(req.url == "/home"){
+        res.end("This is home");
+    }
+    else if(req.url == "/about"){
+        res.end("This is about");
+    }
+    else if(req.url == "/contect"){
+        res.end("This is contect");
+    }
+    else if(req.url == "/service"){
+        res.end("This is service");
+    }
+    else{
+        res.end("Hello, brooo");
+    }
 });
+
+server.listen(4100,()=>{
+    console.log("Sever started!!");
+})
