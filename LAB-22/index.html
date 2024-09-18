@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fetchAPI()"></button>
+    <script>
+        async function fetchAPI() {
+            payload = {
+                "Name": "whatever",
+                "ID": 10
+            }
+
+            data = JSON.stringify(payload);
+            data = await fetch('http://localhost:4140/faculties', {
+                method: "post",
+                body: data,
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+
+            data = await data.json();
+
+            console.log(data);
+
+        }
+    </script>
+</body>
+
+</html>
